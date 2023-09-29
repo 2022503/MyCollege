@@ -33,6 +33,12 @@ public class Students {
     public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
+
+    public Students(String fname, String lname, int studentId) {
+        this.fname = fname;
+        this.lname = lname;
+        this.studentId = studentId;
+    }
     
    private String fname;
    private String lname;
