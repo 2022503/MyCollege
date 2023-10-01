@@ -8,15 +8,18 @@ package mycollege;
  *
  * @author User
  */
-public class Course {
+public class  Course extends Students {
+
+    public Course(int courseId, String courseName, String fname, String lname, int studentId) {
+        super(fname, lname, studentId);
+        this.courseId = courseId;
+        this.courseName = courseName;
+    }
      
     private int courseId;
     private String courseName;
 
-    public Course(int courseId, String courseName) {
-        this.courseId = courseId;
-        this.courseName = courseName;
-    }
+   
 
     public void setCourseId(int courseId) {
         this.courseId = courseId;
